@@ -1,5 +1,43 @@
 :root {
+  --main-font: "Fraunces", "Times New Roman", serif;
+  --secondary-font: "Barlow", "Arial", sans-serif;
+  --color-dark : #24303E;
+  --color-dark-grey: #5B636D;
+  --color-grey : #808397;
+  --color-light-green: #90D4C6;
+  --color-dark-green : #458D7E;
+
 }
+
+/* FONT FRAUNCES 900 700 BARLOW 600 */
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("../fonts/Fraunces9ptSoft-Bold.woff2") format("woff2"),
+    url("../fonts/Fraunces9ptSoft-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url("../fonts/Barlow-SemiBold.woff2") format("woff2"),
+    url("../fonts/Barlow-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("../fonts/Fraunces9ptSoft-Black.woff2") format("woff2"),
+    url("../fonts/Fraunces9ptSoft-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 /* GENERAL */
 html {
@@ -20,7 +58,10 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: var(--main-font);
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
   background-color: #fff;
 }
 
@@ -43,9 +84,9 @@ img {
 
 /* CONTAINER */
 .container {
-  max-width: 900px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1500px;
+  padding-left: 30px;
+  padding-right: 30px;
   margin-left: auto;
   margin-right: auto;
 }
