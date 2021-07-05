@@ -473,20 +473,34 @@ img {
     flex-direction: row-reverse;
   }
 
-  .feature__img{
-    width: 384;
+
+
+  .feature {
+    width: 100%;
+  }
+
+  .feature__box {
+    width: 50%;
+    text-align: left;
+    padding: 30px;
     height: 100%;
   }
 
-  .feature__box{
-    width: 384px;
+  .feature__img {
+    width: 50%;
+    display: block;
+    /* height: 100%; */
   }
+
 
   /* SERVICES */
 
   .service__list{
     flex-direction: row;
   }
+
+
+
 
   @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min--moz-device-pixel-ratio: 2),
@@ -542,27 +556,23 @@ img {
 
   /*  FEATURE DESKTOP */
 
-  .feature__box{
-    min-width: 512px;
-  }
 
-  .feature__img{
-    min-width: 512px;
-  }
 
   .feature{
-    display: flex;
-  }
-
-  .feature__img{
-    flex-grow: 1;
+    width: 100%;
   }
 
   .feature__box{
-    flex-grow: 1;
+    width: 50%;
+    text-align:left;
     padding: 150px;
-    text-align: left;
   }
+
+  .feature__img{
+    width: 50%;
+    display: block;
+  }
+
 
   .service__list{
   }
