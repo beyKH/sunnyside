@@ -110,10 +110,6 @@ img {
   text-transform: uppercase;
 }
 
-.btn:hover{
-  background-color: rgba(255, 255, 255, 0.25);
-}
-
 .btn:active{
   opacity: 0.6;
 }
@@ -221,4 +217,92 @@ img {
   font-family: var(--secondary-font);
   background-color: #FBD600;
   color: var(--color-dark);
+}
+
+.contact:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+
+/* ==================== TABLET  ===================*/
+
+@media only screen and (min-width: 768px) {
+  .top{
+    background-image: url("../img/top-bg-tablet.jpg");
+  }
+
+  .site-header{
+    padding: 40px 30px;
+  }
+
+  .site-header__toggler{
+    display: none;
+  }
+
+  .sitenav{
+    padding: 0;
+    position: static;
+    transform: translateY(0);
+    background-color: transparent;
+    text-align-last: left;
+  }
+
+  .sitenav__list{
+    display: flex;
+    align-items: center;
+  }
+
+  .sitenav__item:not(:last-child){
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+
+  .sitenav::before{
+    border: none;
+  }
+
+
+  .sitenav__link{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+
+  }
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+    .top {
+      background-image: url('../img/top-bg-tablet@2x.jpg');
+    }
+  }
+}
+
+
+@media only screen and (min-width: 1024px) {
+  .top{
+    background-image: url("../img/top-bg-desktop.jpg");
+  }
+
+  .sitenav__item:not(:last-child){
+    margin-right: 45px;
+  }
+
+  .sitenav__link{
+    font-size: 18px;
+  }
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+    .top {
+      background-image: url('../img/top-bg-desktop@2x.jpg');
+    }
+  }
 }
