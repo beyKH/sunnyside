@@ -136,6 +136,15 @@ img {
 
 .logo{
   text-decoration: none;
+  transition: oapcity 0.3s ease;
+}
+
+.logo:hover{
+  opacity: 0.8;
+}
+
+.logo:active{
+  opacity: 0.6;
 }
 
 .logo__img{
@@ -223,12 +232,31 @@ img {
   background-color: rgba(255, 255, 255, 0.25);
 }
 
+/* MOBILE HERO  */
+
+.hero {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.hero__heading {
+  margin: 0;
+  text-align: center;
+  font-family: var(--secondary-font);
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: 6.25px;
+  color: #fff;
+}
+
 
 /* ==================== TABLET  ===================*/
 
 @media only screen and (min-width: 768px) {
   .top{
     background-image: url("../img/top-bg-tablet.jpg");
+    min-height: 580px;
   }
 
   .site-header{
@@ -261,13 +289,25 @@ img {
     border: none;
   }
 
-
   .sitenav__link{
     color: #fff;
     font-size: 16px;
     font-weight: 600;
 
   }
+
+  /* HERO TABLET */
+  .hero{
+
+  }
+
+  .hero__heading{
+    font-weight: 900;
+    font-size: 52px;
+    line-height: 55px;
+    letter-spacing: 7.25px;
+  }
+
 
   @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min--moz-device-pixel-ratio: 2),
@@ -285,6 +325,7 @@ img {
 @media only screen and (min-width: 1024px) {
   .top{
     background-image: url("../img/top-bg-desktop.jpg");
+    min-height: 650px;
   }
 
   .sitenav__item:not(:last-child){
@@ -293,6 +334,30 @@ img {
 
   .sitenav__link{
     font-size: 18px;
+  }
+
+  .contact{
+    background-color: #fff;
+    color: var(--color-dark);
+    transition: color 0.3s ease, background-color 0.3s;
+  }
+
+  .contact:hover{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+
+  /* HERO DESKTOP */
+  .hero{
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .hero__heading{
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 69px;
+    letter-spacing: 8.75px;
   }
 
   @media only screen and (-webkit-min-device-pixel-ratio: 2),
