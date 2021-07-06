@@ -473,8 +473,6 @@ img {
     flex-direction: row-reverse;
   }
 
-
-
   .feature {
     width: 100%;
   }
@@ -489,7 +487,6 @@ img {
   .feature__img {
     width: 50%;
     display: block;
-    /* height: 100%; */
   }
 
 
@@ -586,6 +583,33 @@ img {
   .service-gd{
     background-position: center  top;
   }
+
+  .product__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .product__item {
+    display: flex;
+    width: 100%;
+  }
+
+  .product {}
+
+  .product__img {
+    width: 50%;
+    object-fit: cover;
+  }
+
+  .product__content {
+    width: 50%;
+  }
+
+  .product__heading {}
+
+  .product__info {}
+
 
   @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min--moz-device-pixel-ratio: 2),
