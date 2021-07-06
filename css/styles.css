@@ -10,6 +10,8 @@
 
 }
 
+
+
 /* FONT FRAUNCES 900 700 BARLOW 600 */
 
 @font-face {
@@ -405,11 +407,165 @@ img {
 
 }
 
+/* MOBILE FEEDBACK */
+
+.feedback {
+  padding: 64px 24px 86px;
+}
+
+.feedback__heading {
+  margin: 0;
+  margin-bottom: 64px;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 4px;
+  color: var(--color-grey);
+}
 
 
+.feedback__list {
+  margin: 0;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback__item {
+  margin-bottom: 64px;
+}
+
+.worker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.worker__img{
+  margin-bottom: 32px;
+}
+
+.worker__feedback {
+  margin: 0;
+  margin-bottom: 32px;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  color: var(--color-grey);
+}
+
+.worker__name {
+  display: block;
+  margin-bottom: 9px;
+  font-family: var(--secondary-font);
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.5px;
+}
+
+.worker__position {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: -0.1px;
+  color: var(--color-grey);
+}
 
 
+.img-collection {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
 
+.img-collection__box {
+  width: 50%;
+}
+
+.img-collection__img{
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.img-collection__picture{
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+
+.footer{
+  padding: 64px 40px;
+  background-color: #90D4C6;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.footer__logo{
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+
+.footer__list{
+  margin: 0;
+  margin-bottom: 88px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.footer__item:not(:last-child){
+  margin-right: 55px;
+}
+
+.footer__link{
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.5px;
+  color: #458D7E;
+  transition: color 0.3s ease;
+
+}
+
+.footer__link:hover{
+  color: white;
+}
+
+.sc{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
+}
+
+.sc__item:not(:last-child){
+  margin-right: 28px;
+}
+
+.sc__link{
+  color: var(--color-dark-green);
+  transition: color 0.3s ease;
+}
+
+.sc__link:hover{
+  color: white;
+}
 
 /* ==================== TABLET  ===================*/
 
@@ -504,10 +660,50 @@ img {
 
 
 
-  /* SERVICES */
+  /* SERVICES  TABLET*/
 
   .service__list{
     flex-direction: row;
+  }
+
+
+  /* FEEDBACK */
+
+  .feedback__heading{
+    font-size: 40px;
+    line-height: 38px;
+  }
+
+  .feedback__list{
+
+  }
+
+  .worker__img{
+    margin-bottom: 0;
+    margin-right: 50px;
+  }
+
+  .worker{
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .worker__content{
+    max-width: 330px;
+  }
+
+  .worker__feedback{
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+
+  /* images */
+
+  .img-collection__box {
+    width: 25%;
   }
 
 
@@ -566,8 +762,6 @@ img {
   }
 
   /*  FEATURE DESKTOP */
-
-
 
   .feature{
     width: 100%;
@@ -650,6 +844,55 @@ img {
     font-weight: 600;
     font-size: 16px;
     line-height: 27px;
+  }
+
+  /* FEEDBACK DESKTOP */
+
+  .feedback{
+    padding: 160px 165px;
+    background-color: white;
+  }
+
+  .feedback__heading{
+    margin-bottom: 80px;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 5px;
+  }
+
+  .feedback__list{
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .worker{
+    flex-direction: column;
+    flex-grow: 1;
+    margin-bottom: 0;
+    text-align: center;
+    align-items: center;
+  }
+
+  .worker__img{
+    margin-right: 0;
+    margin-bottom: 58px;
+  }
+  .worker__content{
+    width: cacl(100%/3 - 30px);
+    margin-right: 30px;
+  }
+
+  .worker__content:not(:last-child){
+
+  }
+
+  .worker__feedback{
+    margin-bottom: 69px;
+  }
+
+  .footer{
+    padding:72px 0 ;
   }
 
 
